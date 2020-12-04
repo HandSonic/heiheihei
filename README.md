@@ -1,4 +1,6 @@
 # 特别声明:
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FHandSonic%2Fnewjd.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FHandSonic%2Fnewjd?ref=badge_shield)
+
 
 -   本仓库发布的 MyActions 项目中涉及的任何解锁和解密分析脚本，仅用于测试和学习研究，禁止用于商业用途，不能保证其合法性，准确性，完整性和有效性，请根据情况自行判断.
 
@@ -56,3 +58,7 @@
 [@yangtingxiao](https://github.com/yangtingxiao) - 京东排行榜，天天提额
 
 [@Zero-S1](https://github.com/Zero-S1/xmly_speed) - 喜马拉雅极速版签到
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FHandSonic%2Fnewjd.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FHandSonic%2Fnewjd?ref=badge_large)
