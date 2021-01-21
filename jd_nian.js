@@ -1,5 +1,5 @@
 /*
-京东炸年兽🧨
+京东炸兽🧨
 活动时间:2021-1-18至2021-2-11
 暂不加入品牌会员
 活动入口:https://wbbny.m.jd.com/babelDiy/Zeus/2cKMj86srRdhgWcKonfExzK4ZMBy/index.html
@@ -22,6 +22,7 @@ cron "0 8 * * *" script-path=https://raw.githubusercontent.com/LXK9301/jd_script
 京东炸年兽🧨 = type=cron,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/jd_nian.js, cronexpr="0 8 * * *", timeout=200, enable=true
  */
 const $ = new Env('京东炸年兽🧨');
+    console.log('1\n');
 
 const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
@@ -51,6 +52,7 @@ const inviteCodes = [
 ];
 !(async () => {
   await requireConfig();
+      console.log('2\n');
   if (!cookiesArr[0]) {
     $.msg($.name, '【提示】请先获取京东账号一cookie\n直接使用NobyDa的京东签到获取', 'https://bean.m.jd.com/bean/signIndex.action', {"open-url": "https://bean.m.jd.com/bean/signIndex.action"});
     return;
@@ -195,6 +197,7 @@ async function doTask() {
 }
 
 function getFeedDetail(body={}) {
+      console.log('3\n');
   return new Promise(resolve => {
     $.post(taskPostUrl("nian_getFeedDetail", body, "nian_getFeedDetail"), async (err, resp, data) => {
       try {
@@ -242,6 +245,7 @@ function getFeedDetail(body={}) {
   })
 }
 function getHomeData(info=false) {
+      console.log('4\n');
   return new Promise((resolve) => {
     $.post(taskPostUrl('nian_getHomeData'), async (err, resp, data) => {
       try {
@@ -290,6 +294,7 @@ function getHomeData(info=false) {
   })
 }
 function collectProduceScore(taskId= "collectProducedCoin") {
+      console.log('5\n');
   let temp = {
     "taskId": taskId,
     "rnd": getRnd(),
