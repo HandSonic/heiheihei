@@ -27,7 +27,8 @@ const $ = new Env('京东炸年兽🧨');
 const notify = $.isNode() ? require('./sendNotify') : '';
     console.log('28\n');
 //Node.js用户请在jdCookie.js处填写京东ck;
-const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';    console.log('?');
+const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
+console.log('?');
 let jdNotify = false;//是否关闭通知，false打开通知推送，true关闭通知推送
     console.log('32\n');
 const randomCount = $.isNode() ? 20 : 5;
